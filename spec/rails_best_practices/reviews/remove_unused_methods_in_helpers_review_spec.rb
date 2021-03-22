@@ -101,10 +101,10 @@ module RailsBestPractices
         end
         EOF
         runner.prepare('app/helpers/posts_helper.rb', helper_content)
-        runner.prepare('app/notifer/post_mailer.rb', notifier_content)
+        runner.prepare('app/notifers/post_mailer.rb', notifier_content)
         runner.after_prepare
         runner.review('app/helpers/posts_helper.rb', helper_content)
-        runner.review('app/notifier/post_mailer.rb', notifier_content)
+        runner.review('app/notifiers/post_mailer.rb', notifier_content)
         runner.after_review
         expect(runner.errors.size).to eq(0)
       end

@@ -11,7 +11,7 @@ module RailsBestPractices
       MIGRATION_FILES = %r{db/migrate/.*\.rb$}.freeze
       MODEL_FILES = %r{app/models/.*\.rb$}.freeze
       MAILER_FILES = %r{app/models/.*mailer\.rb$|app/mailers/.*\.rb}.freeze
-      NOTIFIER_FILES = %r{app/notifier/.*\.rb$}.freeze
+      NOTIFIER_FILES = %r{app/notifiers/.*\.rb$}.freeze
       VIEW_FILES = %r{app/(views|cells)/.*\.(erb|haml|slim|builder|rxml)$}.freeze
       PARTIAL_VIEW_FILES = %r{app/(views|cells)/.*/_.*\.(erb|haml|slim|builder|rxml)$}.freeze
       ROUTE_FILES = %r{config/routes.*\.rb}.freeze
